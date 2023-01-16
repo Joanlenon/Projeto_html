@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif, Helvetica, sans-serif;
+    background-color: rgb(8, 1, 32);
+    color: rgb(87, 5, 141);
+
+}
+iframe{
+    border: 0px;
+    padding: 0%;
+}
+
+:root{
+    --cor-fundo: rgb(61, 112, 160);
+    --cor-hover: rgb(202, 18, 187);
+    
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+
+ 
+}
+button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: #6faae0;
+    color: #080808;
+    text-shadow: #eeeff0;
+    justify-content: center;
+
+    
+}
+header h1{
+    color: #5c59e4;
+    text-transform: uppercase;
+}
+
+
+header nav {
+    text-shadow: 5px 5px 5px #ff1493;
+    height: calc(100vh - 55px);
+    justify-content: space-between;
+    max-width: auto;
+    background: no-repeat center/cover url("https://images.unsplash.com/photo-1585620385456-4759f9b5c7d9?ixlib=-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");  
+
+
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+nav p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+nav  {
+    font-weight: 20px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.dp-menu nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+.dp-menu ul li a{
+    background-color: var(--cor-primaria);
+    margin: -1 10px;
+    text-decoration: none;
+    padding: 10px;
+    color: #1f22b6;
+}
+.dp-menu ul li a:hover {
+    background-color: var(--cor-fundo);
+    color: #ff1493;
+}
+/*sub menu*/
+.dp-menu ul ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    
+}
+.dp-menu ul li:hover ul{
+      display: block;
+
+}
+.dp-menu ul ul{
+    width: 150px;
+
+}
+.dp-menu ul ul li a {
+    display: block;
+
+}
+.header-content{
+    max-width: 300px;
+    margin: 150px auto;
+    text-align: justify;
+}
+h2{
+    display: absolute;
+    text-align: center;
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    margin: 0;
+    
+
+  
+}
+   
+
+
+
+
+ /*REPONSIVIDADE */
+    /*Landscape phone to portrait tablet */
+
+
+    @media(max-width: 767px){
+          
+    }
+
+/*Landscape phones and down */
+
+@media(max-width:580px){
+    body{
+        height: calc(100vh - 70px);
+    
+    }
+    header nav ul{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        padding: 0;
+        margin: 0%;
+
+    
+        background: blue;
+        color: #eeeff0;
+        font-weight: bold;
+        height: 55px;
+
+        display: justify;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav p { 
+        width: 100%;
+        text-align: center;
+    }
+
+       
+
+    
+}
+ 
+
+    
+ /*Portrai tablet to landscape and desktop */
+ /*@media(max-width:660px) and (max-width: 970px) { ... } */
+    
+ /*Large desktop */
+ /*@media (min-width:1200px) { ... } */
